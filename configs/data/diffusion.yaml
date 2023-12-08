@@ -1,0 +1,7 @@
+_target_: src.data.diffusion_datamodule.DiffusionDataModule
+data_dir: ${paths.data_dir}
+data_name: CIFAR #MNIST
+batch_size: 128 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+train_val_test_split: [0.9, 0.1, 0]
+num_workers: 5
+pin_memory: False

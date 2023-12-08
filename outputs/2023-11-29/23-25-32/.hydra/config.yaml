@@ -1,0 +1,10 @@
+_target_: src.data.mnist_datamodule.DiffusionDataModule
+data_dir: ${paths.data_dir}
+data_name: Fashion
+batch_size: 128
+train_val_test_split:
+- 60000
+- 5000
+- 5000
+num_workers: 16
+pin_memory: false
